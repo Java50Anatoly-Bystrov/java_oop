@@ -13,6 +13,7 @@ public class DigitsSumComparator implements Comparator<Integer> {
 		int sum = 0;
 		int digit =0;
 		do {
+			
 			digit = Math.abs(number%10);
 			sum+=digit;
 			number/=10;
