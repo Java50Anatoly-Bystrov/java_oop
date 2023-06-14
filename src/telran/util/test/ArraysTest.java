@@ -48,5 +48,14 @@ void standardSortComparatorTest() {
         bubbleSort(array, new DigitsSumComparator());
         assertArrayEquals(expected, array);
     }
+    @Test
+    void testEvenOddComparator() {
+    	Integer[] expected = {10, 100, 200, 5, -5};
+        Integer[] array = {10, 5, -5, 100, 200};
+
+        Arrays.sort(array, new EvenOddComparator());
+        assertArrayEquals(expected, array);
+    }
 }
+
 
